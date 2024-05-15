@@ -11,6 +11,7 @@ search2(X, cons(_, Xs)) :- search2(X, Xs).
 % looks for two occurrences of Elem with any element in between!
 search_two(X, cons(X, cons(_, cons(X, _)))).
 search_two(X, cons(_, Xs)) :- search_two(X, Xs).
+% It is fully relational.
 
 % search_anytwo (Elem , List )
 % looks for any Elem that occurs two times, anywhere
